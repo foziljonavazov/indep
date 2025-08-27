@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>O'zbekiston Respublikasi Mustaqilligi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <span
+            ><img src="./imgs/Uzbekistan_coa.webp" alt="Uzbekistan_coa"
+          /></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#history">Tarix</a></li>
+          <li><a href="#achievements">Yutuqlar</a></li>
+          <li><a href="#symbols">Ramzlar</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>O'zbekiston Respublikasi Mustaqilligiga 34 yil</h1>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wpkj9tdNxNU?si=AKS8jZW1esWK1d-y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="history" class="section">
+      <div class="container">
+        <h2 class="fade-in">Mustaqillik Tarixi</h2>
+
+        <!-- Added filter buttons for timeline periods -->
+        <div class="timeline-filters fade-in">
+          <button class="filter-btn active" data-period="all">Barchasi</button>
+          <button class="filter-btn" data-period="1989-1999">1989-1999</button>
+          <button class="filter-btn" data-period="2000-2009">2000-2009</button>
+          <button class="filter-btn" data-period="2010-2016">2010-2016</button>
+          <button class="filter-btn" data-period="2017-2021">2017-2021</button>
+          <button class="filter-btn" data-period="2022-2025">2022-2025</button>
+        </div>
+
+        <!-- Replaced simple timeline with comprehensive chronology -->
+        <div class="timeline fade-in">
+          <!-- 1989-1999 yillar -->
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1989-yil 21-oktabr</h3>
+              <p>O'zbek tiliga davlat tili maqomi berildi</p>
+              <span class="timeline-year">1989</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1990-yil 24-mart</h3>
+              <p>
+                Islom Karimov O'zbekiston Respublikasining birinchi Prezidenti
+                etib saylandi
+              </p>
+              <span class="timeline-year">1990</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1990-yil 20-iyun</h3>
+              <p>
+                O'zbekiston Respublikasi Davlat suvereniteti to'g'risidagi
+                Deklaratsiya qabul qilindi
+              </p>
+              <span class="timeline-year">1990</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1991-yil 31-avgust</h3>
+              <p>
+                O'zbekiston Respublikasining davlat mustaqilligi e'lon qilindi
+              </p>
+              <span class="timeline-year">1991</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1991-yil 1-sentabr</h3>
+              <p>Mustaqillik kuni sifatida belgilandi</p>
+              <span class="timeline-year">1991</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1991-yil 29-dekabr</h3>
+              <p>
+                Mustaqillik bo'yicha umumxalq referendumi va Prezident saylovi
+                bo'lib o'tdi
+              </p>
+              <span class="timeline-year">1991</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1992-yil 8-dekabr</h3>
+              <p>O'zbekiston Konstitutsiyasi qabul qilindi</p>
+              <span class="timeline-year">1992</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1992-yil mart</h3>
+              <p>O'zbekiston BMTga a'zo bo'ldi</p>
+              <span class="timeline-year">1992</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1995-yil 26-mart</h3>
+              <p>Islom Karimov Prezident etib qayta saylandi</p>
+              <span class="timeline-year">1995</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="1989-1999">
+            <div class="timeline-content">
+              <h3>1999-yil 16-fevral</h3>
+              <p>Toshkentdagi terrorchilik hujumlari sodir bo'ldi</p>
+              <span class="timeline-year">1999</span>
+            </div>
+          </div>
+
+          <!-- 2000-2009 yillar -->
+          <div class="timeline-item" data-period="2000-2009">
+            <div class="timeline-content">
+              <h3>2000-yil yanvar</h3>
+              <p>
+                O'zbekiston Dastlabki iqtisodiy islohotlarni yakunladi va bozor
+                iqtisodiyotiga o'tish davri bosqichiga o'tdi
+              </p>
+              <span class="timeline-year">2000</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2000-2009">
+            <div class="timeline-content">
+              <h3>2001-yil 9-11-sentabr</h3>
+              <p>
+                AQShdagi teraktlardan so'ng O'zbekiston xalqaro terrorizmga
+                qarshi koalitsiyaga qo'shildi
+              </p>
+              <span class="timeline-year">2001</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2000-2009">
+            <div class="timeline-content">
+              <h3>2002-yil yanvar</h3>
+              <p>
+                O'zbekiston Respublikasi BMTning Inson huquqlari bo'yicha asosiy
+                konvensiyalarini ratifikatsiya qildi
+              </p>
+              <span class="timeline-year">2002</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2000-2009">
+            <div class="timeline-content">
+              <h3>2005-yil 13-may</h3>
+              <p>Andijon voqealari sodir bo'ldi</p>
+              <span class="timeline-year">2005</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2000-2009">
+            <div class="timeline-content">
+              <h3>2007-yil 23-dekabr</h3>
+              <p>Islom Karimov yana Prezident etib saylandi</p>
+              <span class="timeline-year">2007</span>
+            </div>
+          </div>
+
+          <!-- 2010-2016 yillar -->
+          <div class="timeline-item" data-period="2010-2016">
+            <div class="timeline-content">
+              <h3>2011-yil 7-aprel</h3>
+              <p>
+                O'zbekiston parlamenti ikki palatali tizimni to'liq amalga
+                oshirdi
+              </p>
+              <span class="timeline-year">2011</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2010-2016">
+            <div class="timeline-content">
+              <h3>2016-yil 2-sentabr</h3>
+              <p>Islom Karimov vafot etdi</p>
+              <span class="timeline-year">2016</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2010-2016">
+            <div class="timeline-content">
+              <h3>2016-yil 4-dekabr</h3>
+              <p>Shavkat Mirziyoyev O'zbekiston Prezidenti etib saylandi</p>
+              <span class="timeline-year">2016</span>
+            </div>
+          </div>
+
+          <!-- 2017-2021 yillar (Yangi O'zbekiston davri) -->
+          <div class="timeline-item" data-period="2017-2021">
+            <div class="timeline-content">
+              <h3>2017-yil</h3>
+              <p>
+                "Harakatlar strategiyasi" e'lon qilindi (5 ta ustuvor yo'nalish)
+              </p>
+              <span class="timeline-year">2017</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2017-2021">
+            <div class="timeline-content">
+              <h3>2018-yil</h3>
+              <p>
+                Vizalar soddalashtirildi, ko'plab davlatlar bilan diplomatik
+                aloqalar kuchaydi
+              </p>
+              <span class="timeline-year">2018</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2017-2021">
+            <div class="timeline-content">
+              <h3>2019-yil</h3>
+              <p>
+                O'zbekistonda matbuot erkinligi va ochiqlik siyosati kengaydi
+              </p>
+              <span class="timeline-year">2019</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2017-2021">
+            <div class="timeline-content">
+              <h3>2020-yil</h3>
+              <p>
+                Pandemiya davrida O'zbekiston sog'liqni saqlash tizimini
+                kuchaytirdi
+              </p>
+              <span class="timeline-year">2020</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2017-2021">
+            <div class="timeline-content">
+              <h3>2021-yil 24-oktabr</h3>
+              <p>Shavkat Mirziyoyev Prezidentlikka qayta saylandi</p>
+              <span class="timeline-year">2021</span>
+            </div>
+          </div>
+
+          <!-- 2022-2025 yillar -->
+          <div class="timeline-item" data-period="2022-2025">
+            <div class="timeline-content">
+              <h3>2022-yil</h3>
+              <p>
+                O'zbekiston Yevroosiyo iqtisodiy ittifoqi bilan kuzatuvchi
+                maqomida hamkorlikni davom ettirdi
+              </p>
+              <span class="timeline-year">2022</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2022-2025">
+            <div class="timeline-content">
+              <h3>2022-yil 1-iyul</h3>
+              <p>
+                Nukusda konstitutsiyaga o'zgartirishlar bo'yicha namoyishlar
+                (Qoraqalpog'iston voqealari)
+              </p>
+              <span class="timeline-year">2022</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2022-2025">
+            <div class="timeline-content">
+              <h3>2023-yil 30-aprel</h3>
+              <p>
+                Konstitutsiyaga o'zgartirishlar bo'yicha referendum bo'lib o'tdi
+                (yangi Konstitutsiya)
+              </p>
+              <span class="timeline-year">2023</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2022-2025">
+            <div class="timeline-content">
+              <h3>2023-yil 9-iyul</h3>
+              <p>
+                Shavkat Mirziyoyev navbatdan tashqari Prezident saylovida
+                g'alaba qozondi (yangi muddat)
+              </p>
+              <span class="timeline-year">2023</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-period="2022-2025">
+            <div class="timeline-content">
+              <h3>2025-yil</h3>
+              <p>
+                "Yangi O'zbekiston – 2030" strategiyasi faol amalga oshirilmoqda
+              </p>
+              <span class="timeline-year">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="fade-in">O'zbekiston 2025-yil Ko'rsatkichlari</h2>
+
+        <!-- Replaced simple achievements with interactive statistics dashboard -->
+        <div class="stats-dashboard fade-in">
+          <!-- Filter buttons for statistics -->
+          <div class="stats-filters">
+            <button class="stats-filter-btn active" data-category="all">
+              Barchasi
+            </button>
+            <button class="stats-filter-btn" data-category="demographic">
+              Demografik
+            </button>
+            <button class="stats-filter-btn" data-category="economic">
+              Iqtisodiy
+            </button>
+            <button class="stats-filter-btn" data-category="development">
+              Rivojlanish
+            </button>
+          </div>
+
+          <!-- Interactive statistics cards -->
+          <div class="interactive-stats">
+            <!-- Demographic indicators -->
+            <div class="stat-card-interactive" data-category="demographic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="37">0</div>
+                <div class="stat-unit">million</div>
+                <div class="stat-label">Aholi soni</div>
+                <div class="stat-rank">43-o'rin (dunyo bo'yicha)</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="75"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="demographic">
+              <div class="stat-icon"><i class="fa-solid fa-map"></i></div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="447400">0</div>
+                <div class="stat-unit">km²</div>
+                <div class="stat-label">Yer yuzasi</div>
+                <div class="stat-rank">56-o'rin (maydon)</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="60"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="demographic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="87">0</div>
+                <div class="stat-unit">kishi/km²</div>
+                <div class="stat-label">Aholi zichligi</div>
+                <div class="stat-rank">O'rtacha zichlik</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="45"></div>
+              </div>
+            </div>
+
+            <!-- Economic indicators -->
+            <div class="stat-card-interactive" data-category="economic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="131">0</div>
+                <div class="stat-unit">mlrd $</div>
+                <div class="stat-label">YaIM (nominal)</div>
+                <div class="stat-rank">64-o'rin (nominal)</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="70"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="economic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="471.6">0</div>
+                <div class="stat-unit">mlrd $ (PPP)</div>
+                <div class="stat-label">YaIM (PPP)</div>
+                <div class="stat-rank">56-o'rin (PPP)</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="80"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="economic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-people-roof"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="3468">0</div>
+                <div class="stat-unit">$ (nominal)</div>
+                <div class="stat-label">Aholi boshiga YaIM</div>
+                <div class="stat-rank">136-o'rin</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="35"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="economic">
+              <div class="stat-icon">
+                <i class="fa-solid fa-people-line"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="12596">0</div>
+                <div class="stat-unit">$ (PPP)</div>
+                <div class="stat-label">Aholi boshiga YaIM (PPP)</div>
+                <div class="stat-rank">119-o'rin</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="55"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="economic">
+              <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="6.7">0</div>
+                <div class="stat-unit">%</div>
+                <div class="stat-label">Iqtisodiy o'sish</div>
+                <div class="stat-rank">Yuqori o'sish sur'ati</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="90"></div>
+              </div>
+            </div>
+
+            <!-- Development indicators -->
+            <div class="stat-card-interactive" data-category="development">
+              <div class="stat-icon">
+                <i class="fa-brands fa-dart-lang"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="0.727">0</div>
+                <div class="stat-unit">HDI</div>
+                <div class="stat-label">Inson rivojlanish indeksi</div>
+                <div class="stat-rank">106-o'rin</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="72"></div>
+              </div>
+            </div>
+
+            <div class="stat-card-interactive" data-category="development">
+              <div class="stat-icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-number-animated" data-target="32">0</div>
+                <div class="stat-unit">ball</div>
+                <div class="stat-label">Korruptsiya indeksi</div>
+                <div class="stat-rank">121-o'rin</div>
+              </div>
+              <div class="stat-progress">
+                <div class="progress-bar" data-progress="32"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparison chart -->
+          <div class="comparison-chart fade-in">
+            <h3>Regional Taqqoslash</h3>
+            <div class="chart-container">
+              <div class="chart-bar">
+                <div class="bar-label">O'zbekiston</div>
+                <div class="bar-fill" data-height="75">
+                  <span class="bar-value">6.7%</span>
+                </div>
+              </div>
+              <div class="chart-bar">
+                <div class="bar-label">Qozog'iston</div>
+                <div class="bar-fill" data-height="45">
+                  <span class="bar-value">3.2%</span>
+                </div>
+              </div>
+              <div class="chart-bar">
+                <div class="bar-label">Qirg'iziston</div>
+                <div class="bar-fill" data-height="60">
+                  <span class="bar-value">4.1%</span>
+                </div>
+              </div>
+              <div class="chart-bar">
+                <div class="bar-label">Tojikiston</div>
+                <div class="bar-fill" data-height="85">
+                  <span class="bar-value">7.5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="symbols" class="section">
+      <div class="container">
+        <h2 class="fade-in">Davlat Ramzlari</h2>
+        <div class="symbols fade-in">
+          <div class="symbol-card" id="flag">
+            <div class="symbol-icon">
+              <img
+                src="./imgs/flag-uzbekistan_1401-255.webp"
+                alt="flag-uzbekistan_1401-255"
+              />
+            </div>
+            <h3>Davlat bayrog'i</h3>
+            <p>Ko'k, oq va yashil ranglar hamda yarim oy va yulduzlar</p>
+          </div>
+          <div class="symbol-card" id="coat">
+            <div class="symbol-icon">
+              <img src="./imgs/Uzbekistan_coa.webp" alt="Uzbekistan_coa" />
+            </div>
+            <h3>Davlat gerbi</h3>
+            <p>Humo qushi, g'alla boshoqlari va paxta gullari</p>
+          </div>
+          <div class="symbol-card" id="anthem">
+            <div class="symbol-icon">
+              <audio controls>
+                <source src="./music/Uzbekistan_anthem.ogg" type="audio/ogg" />
+              </audio>
+            </div>
+            <h3>Davlat madhiyasi</h3>
+            <p>"O'zbekiston Respublikasining Davlat madhiyasi"</p>
+          </div>
+        </div>
+        <div class="symbol-info fade-in" id="flag-info">
+          <div class="fade-in">
+            <h3>
+              O‘zbekiston bayrog‘i 1991-yil 18-noyabrda qabul qilingan. U uchta
+              gorizontal rangdan iborat:
+            </h3>
+            <ul>
+              <li>
+                Ko'k – tinchlik, osmon va suvni anglatadi, shuningdek, hayot
+                manbai sifatida qadrlanadi.
+              </li>
+              <li>Oq – poklik, tinchlik va beg‘araz niyat ramzi.</li>
+              <li>Yashil – tabiat, yangilanish va hayotni bildiradi.</li>
+              <li>Qizil – tomirimizda oqayotgan qonni bildiradi</li>
+            </ul>
+            <h4>Bayroqning chap tomonida yarim oy va 12 yulduz bor.</h4>
+            <ul>
+              <li>
+                Yarim oy – mustaqillik, yangilanish, islomiy qadriyatlarni
+                ifodalaydi.
+              </li>
+              <li>
+                12 yulduz – qadimiy an’analarga ko‘ra mukammallik ramzi,
+                shuningdek, yilning 12 oyi, burjlar bilan bog‘liq.
+              </li>
+            </ul>
+            <p>
+              <b>Rassom</b>:
+              <a
+                href="https://uz.wikipedia.org/wiki/Malik_Nabiyev"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Malik Nabiyev"
+                >Malik Nabiyev</a
+              >
+            </p>
+            <p><b>Nisbati</b>: 1:2</p>
+            <p>
+              <b>Umumiy ma'no</b>: bayroq O‘zbekistonning tarixiy qadriyatlari,
+              tinchlik, mustaqillik va taraqqiyotini ifodalaydi.
+            </p>
+          </div>
+        </div>
+        <div class="symbol-info fade-in" id="coat-info">
+          <h3>
+            Oʻzbekiston Respublikasining davlat gerbi 1992-yil 2-iyulda
+            tasdiqlangan. U quyidagilarni ifodalaydi:
+          </h3>
+          <ul>
+            <li>Humo qushi – ozodlik va baxt ramzi.</li>
+            <li>Oq quyosh – tinchlik va farovonlik timsoli.</li>
+            <li>
+              Bugʻdoy boshoqlari – moʻl-koʻllik va toʻkin-sochinlikni bildiradi.
+            </li>
+            <li>Paxta shodalari – respublikaning asosiy boyligi.</li>
+            <li></li>
+          </ul>
+          <h4>Oʻrtada – togʻlar va daryo manzarasi</h4>
+          <ul>
+            <li>Tog'lar: Pomir va Tyanshan</li>
+            <li>Daryolar: Amudaryo va Sirdaryo</li>
+          </ul>
+          <h4>Tepada:</h4>
+          <ul>
+            <li>Sakkiz qirrali yulduz: Musulmonlar ramzi</li>
+            <li>Hilol oy va yulduz: Islom dini ramzi</li>
+          </ul>
+          <p>
+            <b>Rassom</b>:
+            <a
+              href="https://uz.wikipedia.org/wiki/Anvar_Mamajonov"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Anvar Mamajonov"
+              >Anvar Mamajonov</a
+            >
+          </p>
+        </div>
+        <div class="symbol-info fade-in" id="anthem-info">
+          <h3>
+            O‘zbekiston davlat madhiyasi 1992-yil 10-dekabrda, Oʻzbekiston
+            Respublikasi Oliy Kengashining IX sessiyasida tasdiqlangan.
+          </h3>
+          <p>
+            <b>Shoir</b>:
+            <a
+              href="https://uz.wikipedia.org/wiki/Abdulla_Oripov"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abdulla Oripov"
+              >Abdulla Oripov</a
+            >
+          </p>
+          <p>
+            <b>Bastakor:</b>:
+            <a
+              href="https://uz.wikipedia.org/wiki/Mutal_Burhonov"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Mutal Burhonov"
+              >Mutal Burhonov</a
+            >
+          </p>
+          <br />
+          <p>
+            Serquyosh hur o‘lkam, elga baxt, najot, <br />
+            Sen o‘zing do‘stlarga yo‘ldosh, mehribon! <br />
+            Yashnagay to abad ilm-u fan, ijod, <br />
+            Shuhrating porlasin toki bor jahon! <br /><br />
+
+            Oltin bu vodiylar — jon O‘zbekiston, <br />
+            Ajdodlar mardona ruhi senga yor! <br />
+            Ulug‘ xalq qudrati jo‘sh urgan zamon, <br />
+            Olamni mahliyo aylagan diyor! <br /><br />
+
+            Bag‘ri keng o‘zbekning o‘chmas iymoni, <br />
+            Erkin, yosh avlodlar senga zo‘r qanot! <br />
+            Istiqlol mash’ali, tinchlik posboni, <br />
+            Haqsevar, ona yurt, mangu bo‘l obod! <br /><br />
+
+            Oltin bu vodiylar — jon O‘zbekiston, <br />
+            Ajdodlar mardona ruhi senga yor! <br />
+            Ulug‘ xalq qudrati jo‘sh urgan zamon, <br />
+            Olamni mahliyo aylagan diyor! <br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 O'zbekiston Respublikasi Mustaqilligi. Barcha huquqlar
+          himoyalangan.
+        </p>
+        <p style="margin-top: 1rem">Mustaqillik - eng qimmatli ne'matimiz!</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
