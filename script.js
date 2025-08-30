@@ -316,6 +316,7 @@ flag.addEventListener("click", () => {
   } else {
     hideAll();
     flagInfo.style.display = "block";
+    flagInfo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 });
 
@@ -326,6 +327,7 @@ coat.addEventListener("click", () => {
   } else {
     hideAll();
     coatInfo.style.display = "block";
+    coatInfo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 });
 
@@ -336,5 +338,68 @@ anthem.addEventListener("click", () => {
   } else {
     hideAll();
     anthemInfo.style.display = "block";
+    anthemInfo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 });
+
+const galleryImages = document.querySelectorAll(".gallery-card img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+// Rasmni bosganda ochish
+galleryImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    if (window.innerWidth >= 768) {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+      setTimeout(() => {
+        lightbox.classList.add("show");
+        lightboxImg.classList.add("enlarge");
+      }, 10);
+    }
+  });
+});
+
+// Fonni yoki ESC tugmasini bosganda yopish
+lightbox.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+  lightboxImg.classList.remove("enlarge");
+  setTimeout(() => {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  }, 300);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    lightbox.click();
+  }
+});
+
+  const videoIds = [
+    "wpkj9tdNxNU", 
+    "VsEF3l3gAJU", 
+    "vDBskqUCrLk", 
+    "9YXxijKtE-w",
+    "0-vY79HE2dI",
+    "qVWXOXihBew",
+    "arX0aFYLDGQ",
+    "Cs-q7JuLE7E"  
+  ];
+
+  let currentIndex = 0;
+  const player = document.getElementById("youtubePlayer");
+
+  function loadVideo(index) {
+    player.src = `https://www.youtube.com/embed/${videoIds[index]}`;
+  }
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % videoIds.length;
+    loadVideo(currentIndex);
+  });
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + videoIds.length) % videoIds.length;
+    loadVideo(currentIndex);
+  });
